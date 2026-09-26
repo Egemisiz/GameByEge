@@ -4,72 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Din Reels</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
     <div class="app-container">
+        
+        <!-- Dokunarak Başlatma Kapak Ekranı -->
+        <div id="start-overlay" class="start-overlay" onclick="startReels()">
+            <div style="font-size: 40px; margin-bottom: 10px;">▶️</div>
+            <div style="font-weight: 800; font-size: 16px;">Videoları Başlatmak İçin Dokun</div>
+            <div style="font-size: 12px; color: #94a3b8; margin-top: 4px;">Sesli izlemek için dokunmanız gereklidir</div>
+        </div>
+
         <div class="reels-container" id="reels-feed">
             
             <!-- Video 1 -->
             <div class="reels-wrapper">
-                <video class="reels-video" loop onclick="togglePlay(this)">
+                <video class="reels-video" loop playsinline muted preload="metadata">
                     <source src="videos/video1.mp4" type="video/mp4">
+                    Video bulunamadı.
                 </video>
                 <div class="reels-overlay">
                     <div class="reels-user"><div class="avatar">🕌</div> @din_dersi_6</div>
-                    <div class="reels-desc">6. Sınıf 1. Ünite - Peygamber Sıfatları #din #ders</div>
+                    <div class="reels-desc">6. Sınıf 1. Ünite - Peygamberlerin Sıfatları 📖</div>
                 </div>
                 <div class="reels-side-bar">
                     <div class="side-btn"><div class="side-icon" onclick="like(this)">❤️</div><span class="side-text">1.2K</span></div>
-                    <div class="side-btn"><div class="side-icon">💬</div><span class="side-text">48</span></div>
+                    <div class="side-btn"><div class="side-icon">💬</div><span class="side-text">45</span></div>
                     <div class="side-btn"><div class="side-icon">✈️</div><span class="side-text">Paylaş</span></div>
                 </div>
             </div>
 
             <!-- Video 2 -->
             <div class="reels-wrapper">
-                <video class="reels-video" loop onclick="togglePlay(this)">
+                <video class="reels-video" loop playsinline muted preload="metadata">
                     <source src="videos/video2.mp4" type="video/mp4">
+                    Video bulunamadı.
                 </video>
                 <div class="reels-overlay">
                     <div class="reels-user"><div class="avatar">📖</div> @din_dersi_6</div>
-                    <div class="reels-desc">İlahi Kitaplar ve Gönderildiği Peygamberler 📚</div>
+                    <div class="reels-desc">İlahi Kitaplar ve Peygamberler 📚</div>
                 </div>
                 <div class="reels-side-bar">
-                    <div class="side-btn"><div class="side-icon" onclick="like(this)">❤️</div><span class="side-text">2.4K</span></div>
-                    <div class="side-btn"><div class="side-icon">💬</div><span class="side-text">95</span></div>
+                    <div class="side-btn"><div class="side-icon" onclick="like(this)">❤️</div><span class="side-text">2.1K</span></div>
+                    <div class="side-btn"><div class="side-icon">💬</div><span class="side-text">88</span></div>
                     <div class="side-btn"><div class="side-icon">✈️</div><span class="side-text">Paylaş</span></div>
                 </div>
             </div>
 
             <!-- Video 3 -->
             <div class="reels-wrapper">
-                <video class="reels-video" loop onclick="togglePlay(this)">
+                <video class="reels-video" loop playsinline muted preload="metadata">
                     <source src="videos/video3.mp4" type="video/mp4">
+                    Video bulunamadı.
                 </video>
                 <div class="reels-overlay">
                     <div class="reels-user"><div class="avatar">✨</div> @din_dersi_6</div>
-                    <div class="reels-desc">Suhuf Verilen Peygamberler Kısa Özet 📝</div>
+                    <div class="reels-desc">Suhuf Verilen Peygamberlerimiz 📝</div>
                 </div>
                 <div class="reels-side-bar">
-                    <div class="side-btn"><div class="side-icon" onclick="like(this)">❤️</div><span class="side-text">850</span></div>
-                    <div class="side-btn"><div class="side-icon">💬</div><span class="side-text">31</span></div>
+                    <div class="side-btn"><div class="side-icon" onclick="like(this)">❤️</div><span class="side-text">950</span></div>
+                    <div class="side-btn"><div class="side-icon">💬</div><span class="side-text">32</span></div>
                     <div class="side-btn"><div class="side-icon">✈️</div><span class="side-text">Paylaş</span></div>
                 </div>
             </div>
 
             <!-- Video 4 -->
             <div class="reels-wrapper">
-                <video class="reels-video" loop onclick="togglePlay(this)">
+                <video class="reels-video" loop playsinline muted preload="metadata">
                     <source src="videos/video4.mp4" type="video/mp4">
+                    Video bulunamadı.
                 </video>
                 <div class="reels-overlay">
                     <div class="reels-user"><div class="avatar">🌟</div> @din_dersi_6</div>
                     <div class="reels-desc">Kunut Duaları ve Anlamları 🙏</div>
                 </div>
                 <div class="reels-side-bar">
-                    <div class="side-btn"><div class="side-icon" onclick="like(this)">❤️</div><span class="side-text">3.1K</span></div>
-                    <div class="side-btn"><div class="side-icon">💬</div><span class="side-text">120</span></div>
+                    <div class="side-btn"><div class="side-icon" onclick="like(this)">❤️</div><span class="side-text">3.4K</span></div>
+                    <div class="side-btn"><div class="side-icon">💬</div><span class="side-text">140</span></div>
                     <div class="side-btn"><div class="side-icon">✈️</div><span class="side-text">Paylaş</span></div>
                 </div>
             </div>
@@ -84,28 +96,28 @@
     </div>
 
     <script>
-        // Videoya tıklayınca Oynat/Durdur
-        function togglePlay(video) {
-            if (video.paused) {
-                video.play();
-            } else {
-                video.pause();
-            }
+        const videos = document.querySelectorAll('.reels-video');
+
+        function startReels() {
+            document.getElementById('start-overlay').style.display = 'none';
+            videos.forEach(v => {
+                v.muted = false;
+            });
+            if(videos[0]) videos[0].play();
         }
 
-        // Beğeni Butonu
         function like(el) {
             el.style.color = el.style.color === 'red' ? 'white' : 'red';
         }
 
-        // Ekran kaydırıldığında sadece ekrandaki videoyu oynat
-        const videos = document.querySelectorAll('.reels-video');
+        // Otomatik Kaydırma Algılayıcı
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
+                const video = entry.target;
                 if (entry.isIntersecting) {
-                    entry.target.play().catch(() => {});
+                    video.play().catch(e => console.log("Oynatma hatası:", e));
                 } else {
-                    entry.target.pause();
+                    video.pause();
                 }
             });
         }, { threshold: 0.6 });
